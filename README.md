@@ -12,7 +12,8 @@ Internal Is GONNA BE USING XENO
 > Use At Your Risk As It May Be Detected
 
 
-Made In Poland And C#
+Made In Poland And Python
+
 
 > [!NOTE]
 > This is INDEV.
