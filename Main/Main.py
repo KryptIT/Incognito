@@ -6,11 +6,6 @@ import asyncio
 import requests
 
 
-gui= r'LUABIN\\gui.IncognitoLUAME'  # Specify the correct path if needed
-
-# Open and read the content of the file
-with open(gui, 'r') as file:
-    content = file.read()
 
 
 stop = asyncio.Event()
