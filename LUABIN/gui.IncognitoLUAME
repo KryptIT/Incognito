@@ -148,7 +148,7 @@ TextButton.Position = UDim2.new(0.0199659616, 0, 0.838599801, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Visible = false
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Open Incognito"
+TextButton.Text = "Open sigmaside"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -168,8 +168,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 	local infyel = frame.Infyeld
 	local label1 = frame.Tit
 	local label2 = frame.Scrip
-	local execbut = frame.exec
-	local p00esp = frame.esp
+	
 	
 	
 	lilman.Visible = false
@@ -219,7 +218,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 	
 	
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "[Incogntio]",
+			Title = "[SigmaSide]",
 			Text = "Loaded",
 			Icon = "http://www.roblox.com/asset/?id=18100620978",
 			Duration = 5
@@ -277,7 +276,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 	
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "[Incogntio]",
+		Title = "[SigmaSide]",
 		Text = "Loaded",
 		Icon = "http://www.roblox.com/asset/?id=18100620978",
 		Duration = 5
@@ -286,11 +285,11 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 	
 	local function exec()
-		loadstring(execbox.Text)()
+		require(0x34A62CEB9):SpawnS(execbox.Text, workspace)
 	end
 	
 	local function yeld()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		require((4851033180))(game.Players.LocalPlayer.Name)
 	end
 	
 	
@@ -308,9 +307,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 		label1.Visible = false
 		label2.Visible = false
 		execbut.Visible = false
-		scriptbut.Visible = false
-		p00esp.Visible = false
-	
+		
 		frame:TweenSize(
 			UDim2.new(0, 0,0, 0),
 			"In",
@@ -321,7 +318,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 		task.wait(0.8)
 		frame.Visible = false
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "[Incogntio]",
+			Title = "[SigmaSide]",
 			Text = "Press the button to open again.",
 			Icon = "http://www.roblox.com/asset/?id=18100620978",
 			Duration = 5
@@ -334,8 +331,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	clear.MouseButton1Click:Connect(cleard)
 	infyel.MouseButton1Click:Connect(yeld)
 	execbut.MouseButton1Click:Connect(exec)
-	scriptbut.MouseButton1Click:Connect(private)
-	p00esp.MouseButton1Click:Connect(esp)
+	
 	
 	
 	
@@ -350,9 +346,9 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	label1.Visible = true
 	label2.Visible = true
 	execbut.Visible = true
-	scriptbut.Visible = true
-	p00esp.Visible = true
+	
 	
 end
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
