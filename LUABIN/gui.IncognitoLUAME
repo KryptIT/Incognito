@@ -12,8 +12,6 @@ local Infyeld = Instance.new("TextButton")
 local Lilman = Instance.new("Frame")
 local exec = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
-local hub = Instance.new("TextButton")
-local esp = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 
 --Properties:
@@ -138,33 +136,9 @@ Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clear.TextSize = 20.000
 Clear.TextWrapped = true
 
-hub.Name = "hub"
-hub.Parent = Frame
-hub.BackgroundColor3 = Color3.fromRGB(107, 99, 101)
-hub.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hub.BorderSizePixel = 0
-hub.Position = UDim2.new(0.00904159155, 0, 0.445692897, 0)
-hub.Size = UDim2.new(0, 152, 0, 24)
-hub.Visible = false
-hub.Font = Enum.Font.SourceSansBold
-hub.Text = "Private Hub"
-hub.TextColor3 = Color3.fromRGB(255, 255, 255)
-hub.TextSize = 20.000
-hub.TextWrapped = true
 
-esp.Name = "esp"
-esp.Parent = Frame
-esp.BackgroundColor3 = Color3.fromRGB(107, 99, 101)
-esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
-esp.BorderSizePixel = 0
-esp.Position = UDim2.new(0.00904159155, 0, 0.561797738, 0)
-esp.Size = UDim2.new(0, 152, 0, 24)
-esp.Visible = false
-esp.Font = Enum.Font.SourceSansBold
-esp.Text = "P00 esp"
-esp.TextColor3 = Color3.fromRGB(255, 255, 255)
-esp.TextSize = 20.000
-esp.TextWrapped = true
+
+
 
 TextButton.Parent = ScreenGui
 TextButton.BackgroundColor3 = Color3.fromRGB(26, 255, 0)
@@ -195,7 +169,6 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 	local label1 = frame.Tit
 	local label2 = frame.Scrip
 	local execbut = frame.exec
-	local scriptbut = frame.hub
 	local p00esp = frame.esp
 	
 	
@@ -207,8 +180,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 	label1.Visible = false
 	label2.Visible = false
 	execbut.Visible = false
-	scriptbut.Visible = false
-	p00esp.Visible = false
+	
 	
 	
 	local function idk()
@@ -241,8 +213,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 		label1.Visible = true
 		label2.Visible = true
 		execbut.Visible = true
-		scriptbut.Visible = true
-		p00esp.Visible = true
+		
 		
 	
 	
@@ -272,8 +243,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	local label1 = frame.Tit
 	local label2 = frame.Scrip
 	local execbut = frame.exec
-	local scriptbut = frame.hub
-	local p00esp = frame.esp
+	
 	
 	
 	lilman.Visible = false
@@ -284,8 +254,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	label1.Visible = false
 	label2.Visible = false
 	execbut.Visible = false
-	scriptbut.Visible = false
-	p00esp.Visible = false
+	
 	
 	
 	frame:TweenSize(
@@ -325,14 +294,6 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	end
 	
 	
-	local function private()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cubbbe/Private-Hub-BV2/refs/heads/main/Private%20Hub%20Script"))()
-	end
-	
-	
-	local function esp()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/hubertte/simple-esp/refs/heads/main/README.luau"))()
-	end
 	
 	local function cleard()
 		execbox.Text = ""
@@ -394,3 +355,4 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 end
 coroutine.wrap(NPKJPVI_fake_script)()
+
