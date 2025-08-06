@@ -35,7 +35,7 @@ Tit.BorderSizePixel = 0
 Tit.Size = UDim2.new(0, 162, 0, 41)
 Tit.Visible = false
 Tit.Font = Enum.Font.Unknown
-Tit.Text = "Incogntio Beta."
+Tit.Text = "SigmaSide Beta."
 Tit.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tit.TextSize = 14.000
 
@@ -64,7 +64,7 @@ TextBox.Size = UDim2.new(0, 385, 0, 181)
 TextBox.Visible = false
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "Incogntio"
+TextBox.Text = "Sigmaside - gui incognito xeno based by kryptit"
 TextBox.TextColor3 = Color3.fromRGB(255, 228, 228)
 TextBox.TextSize = 17.000
 TextBox.TextWrapped = true
@@ -350,5 +350,6 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 end
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
 
