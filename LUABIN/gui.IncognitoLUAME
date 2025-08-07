@@ -285,7 +285,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 	
 	local function exec()
-		require(0x34A62CEB9):SpawnS(execbox.Text, workspace)
+	     loadstring(execbox.Text)()
 	end
 	
 	local function yeld()
@@ -350,6 +350,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 end
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
 
 
