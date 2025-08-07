@@ -178,7 +178,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 	infyel.Visible = false
 	label1.Visible = false
 	label2.Visible = false
-	execbut.Visible = false
+	
 	
 	
 	
@@ -211,7 +211,7 @@ local function GHDNHRP_fake_script() -- TextButton.LocalScript
 		infyel.Visible = true
 		label1.Visible = true
 		label2.Visible = true
-		execbut.Visible = true
+		
 		
 		
 	
@@ -241,7 +241,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	local infyel = frame.Infyeld
 	local label1 = frame.Tit
 	local label2 = frame.Scrip
-	local execbut = frame.exec
+	
 	
 	
 	
@@ -252,7 +252,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	infyel.Visible = false
 	label1.Visible = false
 	label2.Visible = false
-	execbut.Visible = false
+	
 	
 	
 	
@@ -306,7 +306,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 		infyel.Visible = false
 		label1.Visible = false
 		label2.Visible = false
-		execbut.Visible = false
+		
 		
 		frame:TweenSize(
 			UDim2.new(0, 0,0, 0),
@@ -330,7 +330,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	exit.MouseButton1Click:Connect(exits)
 	clear.MouseButton1Click:Connect(cleard)
 	infyel.MouseButton1Click:Connect(yeld)
-	execbut.MouseButton1Click:Connect(exec)
+	
 	
 	
 	
@@ -345,11 +345,12 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	infyel.Visible = true
 	label1.Visible = true
 	label2.Visible = true
-	execbut.Visible = true
+	
 	
 	
 end
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
 
 
