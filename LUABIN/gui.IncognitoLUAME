@@ -80,20 +80,16 @@ Tit.Text = "Incogntio Beta."
 
 Tit.TextColor3 = Color3.fromRGB(255, 255, 255)
 
-Tit.TextSize = 14.000
-local hue = 0 -- Start at hue 0 (red)
-	
-	-- Function to update the color of the text
-	local function updateRainbowText()
-		-- Increment the hue value
-		hue = (hue + 0.01) % 1 -- Keep the hue between 0 and 1 (it loops back to 0)
-	
-		-- Set the TextLabel color based on the hue
-		Tit.TextColor3 = Color3.fromHSV(hue, 1, 1) -- Full saturation and value for bright colors
+
+-- 🌈 Rainbow animation
+task.spawn(function()
+	while true do
+		for hue = 0, 1, 0.01 do
+			Tit.TextColor3 = Color3.fromHSV(hue, 1, 1)
+			task.wait(0.03)
+		end
 	end
-	
-	-- Continuously update the text color every frame
-	RunService.RenderStepped:Connect(updateRainbowText)
+end)
 
 
 
@@ -802,3 +798,4 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 end
 
 coroutine.wrap(NPKJPVI_fake_script)()
+
