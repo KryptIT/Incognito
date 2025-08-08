@@ -38,7 +38,7 @@ local TextButton = Instance.new("TextButton")
 
 
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -796,5 +796,6 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 end
 
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
 
