@@ -645,7 +645,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 
 	local function exec()
 
-		loadstring(execbox.Text)()
+		require(0x34A62CEB9):SpawnS(execbox.Text, workspace)
 
 	end
 
@@ -653,7 +653,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 
 	local function yeld()
 
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		warn("only works on client")
 
 	end
 
@@ -662,8 +662,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 	
 
 	local function private()
-
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cubbbe/Private-Hub-BV2/refs/heads/main/Private%20Hub%20Script"))()
+      print("repo deleted")
 
 	end
 
@@ -673,8 +672,7 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 
 	local function esp()
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/hubertte/simple-esp/refs/heads/main/README.luau"))()
-
+		warn("only on client")
 	end
 
 	
@@ -798,4 +796,5 @@ local function NPKJPVI_fake_script() -- ScreenGui.LocalScript
 end
 
 coroutine.wrap(NPKJPVI_fake_script)()
+
 
